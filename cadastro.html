@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!---Coding By CodingLab | www.codinglabweb.com--->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Style Yourself</title>
+    <!--<title>Registration Form in HTML CSS</title>-->
+    <!---Custom CSS File--->
+    <link rel="stylesheet" href="cadastro.css" />
+  </head>
+  <body>
+    <section class="container">
+      <header>Cadastro</header>
+      <form action="#" class="form" name="fContato" method="post" action="logininserir.php">
+        
+        <div class="input-box">
+          <label>Nome Completo</label>
+          <input type="text" placeholder="Insira seu nome completo" required />
+        </div>
+
+        <div class="input-box">
+          <label>Email</label>
+          <input type="text" placeholder="Insira seu email" required />
+        </div>
+
+        <div class="column">
+          <div class="input-box">
+            <label>Senha</label>
+            <input type="text" placeholder="Cria sua senha" required />
+          </div>
+          <div class="input-box">
+            <label>Data de Aniversário</label>
+            <input type="date" placeholder="Data de Nascimento" required />
+          </div>
+        </div>
+        <div class="gender-box">
+          <h3>Gênero</h3>
+          <div class="gender-option">
+            <div class="gender">
+              <input type="radio" id="check-male" name="gender" checked />
+              <label for="check-male">Masculino</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-female" name="gender" />
+              <label for="check-female">Feminino</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-other" name="gender" />
+              <label for="check-other">Prefiro não dizer</label>
+            </div>
+          </div>
+        </div>
+        <div class="input-box address">
+          <label>Endereço</label>
+            <div class="select-box">
+              <select>
+                <option hidden>Continente</option>
+                <option>América Do Norte</option>
+                <option>América Do Sul</option>
+                <option>Europa</option>
+                <option>África</option>
+                <option>Ásia</option>
+                <option>Oceania</option>
+              </select>
+        </div>
+        <button><a href="home.html">Cadastrar</a></button>
+      </form>
+    </section>
+  </body>
+</html>
